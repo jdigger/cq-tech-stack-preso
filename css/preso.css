@@ -1,0 +1,103 @@
+div.quote {
+  background-color: #ddeeee;
+  box-shadow: 0 0 6px black;
+  text-align: left;
+  font-size: 100%;
+  line-height: 1.2em;
+  width: 80%;
+  padding: 10px;
+  position: relative;
+  transform: translateX(-50%);
+  left: 50%; }
+
+p.note {
+  box-shadow: 0 0 6px black;
+  font-size: 100%;
+  line-height: 1.2em; }
+
+div.note {
+  box-shadow: 0 0 6px black;
+  font-size: 100%;
+  line-height: 1.2em;
+  padding: 10px; }
+  div.note p {
+    text-align: left; }
+
+p.strong {
+  font-weight: bold;
+  font-size: 1.2em; }
+
+i.fa {
+  font-family: "FontAwesome";
+  font-style: normal; }
+
+span.small, p.small {
+  font-size: 60%; }
+
+i.fa.fa-external-link {
+  font-size: 60%; }
+
+.tip {
+  color: blue; }
+
+/* warnings pop */
+.fa-exclamation-triangle {
+  color: red; }
+
+div.slides section table {
+  margin-left: auto;
+  margin-right: auto; }
+  div.slides section table th, div.slides section table td {
+    border-width: 1px;
+    border-style: solid; }
+  div.slides section table td {
+    padding: 2px; }
+  div.slides section table tr td:first-child {
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px; }
+
+section.summary p {
+  font-size: 200%;
+  font-weight: bold; }
+
+.vcenter, .slides h1 {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  width: 80%; }
+
+img.cq-runtime-architecture {
+  width: 400px; }
+
+img.server-overview {
+  width: 700px; }
+
+img.content-progression {
+  width: 800px; }
+
+img.full {
+  width: 100%; }
+
+#osgi-definition p {
+  font-size: 80%; }
+
+#everything-content .left {
+  float: left;
+  display: inline-block;
+  width: 25%; }
+#everything-content .right {
+  float: right;
+  display: inline-block;
+  width: 50%; }
+  #everything-content .right img {
+    width: 100%; }
+
+.reveal .slides {
+  left: 50px;
+  top: 0px; }
+
+.reveal .slides > section {
+  left: 0px;
+  top: 0px; }

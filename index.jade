@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        title CQ Tech Stack Overview
+
+        meta(name="description", content="CQ Tech Stack Overview")
+
+        include fragments/header.jade
+
+    body
+        .reveal
+            .slides
+                include fragments/title.jade
+                include fragments/intro.jade
+                include fragments/basics.jade
+                include fragments/jcr.jade
+                include fragments/sling.jade
+                include fragments/osgi.jade
+                section
+                    h1 Q & A
+                include fragments/references.jade
+
+                include fragments/reveal_config.jade

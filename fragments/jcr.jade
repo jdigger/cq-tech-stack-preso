@@ -1,0 +1,42 @@
+section
+    h1 Java Content Repository
+
+section
+    .vcenter.quote
+        p "Content Repository API for Java (JCR) is a specification for a Java platform application programming interface (API) to access content repositories in a uniform manner. The content repositories are used in content management systems to keep the content data and also the metadata used in content management systems (CMS) such as versioning metadata. The specification was developed under the Java Community Process as JSR-170 (Version 1) and as JSR-283 (version 2). The main Java package is <code>javax.jcr</code>."
+        p: a(href="http://en.wikipedia.org/w/index.php?title=Content_repository_API_for_Java&oldid=619907469") - Wikipedia entry for "Content repository API for Java"
+
+section
+    .vcenter
+        p.strong In other words, it's a hybrid between a filesystem and a database
+
+section
+    .vcenter
+        p Or, to put it another way:
+        p.strong A NoSql DB specification optimized for the kinds of things web sites do (such as large binaries and "unstructured" content)
+
+section
+    .vcenter
+        p.strong It is very much a <i>specification</i>:
+        p.strong There are a number of implementations based on specific needs
+
+section
+    .vcenter
+        p: img.full(src="images/jcr.png")
+
+
+section#everything-content
+    .vcenter
+        h2 Everything Is Content
+        .left
+            p: ul
+                li HTML
+                li CSS
+                li JSPs
+                li Servlets
+                li Images
+                li Videos
+                li OSGi Bundles (i.e., code)
+                li etc.
+        .right
+            img(src="images/everything_content.png")
