@@ -1,3 +1,10 @@
+@mixin transform-translate($x, $y) {
+    -webkit-transform: translate($x, $y);
+    -moz-transform: translate($x, $y);
+    -ms-transform: translate($x, $y);
+    transform: translate($x, $y);
+}
+
 div.quote {
     background-color: #ddeeee;
     box-shadow: 0 0 6px black;
@@ -84,7 +91,7 @@ section.summary p {
 .vcenter, .slides h1 {
     position: absolute;
     top: 50%;
-    transform: translate(-50%, -50%);
+    @include transform-translate(-50%, -50%);
     left: 50%;
     width: 80%;
 }
