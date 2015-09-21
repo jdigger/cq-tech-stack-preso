@@ -49,8 +49,14 @@ i.fa {
     font-style: normal;
 }
 
-span.small, p.small {
+span.small, p.small, div.small {
     font-size: 60%;
+}
+
+ul.smaller {
+    li {
+        font-size: 80%;
+    }
 }
 
 i.fa.fa-external-link {
@@ -111,9 +117,25 @@ img.content-progression {
     width: 800px;
 }
 
-img.full {
-    width: 100%;
+
+#title-slide {
+    img {
+        top: -20px;
+        margin-bottom: -100px;
+        height: 170px;
+        position: relative;
+    }
 }
+
+
+// #authoring {
+//     img {
+//         margin-top: -10px;
+//         margin-bottom: -100px;
+//         height: 650px;
+//         width: auto;
+//     }
+// }
 
 #osgi-definition p {
     font-size: 80%;
@@ -135,6 +157,92 @@ img.full {
     }
 }
 
+#audience-manager {
+    h3 {
+        margin-top: -50px;
+    }
+    p {
+        margin-left: -50px;
+        margin-right: -50px;
+        text-align: left;
+        font-size: 70%;
+        line-height: 1em;
+    }
+    ul {
+        display: block;
+    }
+    li {
+        margin-left: -50px;
+        font-size: 70%;
+        line-height: 1em;
+    }
+
+    #am_segments {
+        float: left;
+        display: inline-block;
+        width: 420px;
+        margin: 0 0 -30px -50px;
+    }
+    #am_resp {
+        float: right;
+        display: inline-block;
+        width: 690px;
+        margin: -10px -50px -80px 0;
+    }
+}
+
+
+#test-n-target {
+    h3 {
+        margin-top: -20px;
+    }
+    .left {
+        float: left;
+        display: block;
+        width: 60%;
+        font-size: 100%;
+        line-height: 1.2em;
+    }
+    .right {
+        float: right;
+        display: block;
+        width: 40%;
+        margin: -10px -00px -100px -100px;
+        img {
+            margin: 0;
+            height: 600px;
+        }
+    }
+}
+
+#analytics {
+    img {
+        height: 530px;
+        margin-top: -10px;
+        margin-bottom: -50px;
+    }
+}
+
+#segmentation {
+    p {
+        font-size: 80%;
+        text-align: left;
+    }
+    img {
+        height: 600px;
+        position: absolute;
+        top: 65px;
+        left: 300px;
+    }
+}
+
+#am-together {
+    img {
+        height: 600px;
+        margin-top: -20px;
+        margin-bottom: -100px;
+    }
+}
 
 .reveal .slides {
     left: 50px;
@@ -144,6 +252,27 @@ img.full {
 .reveal .slides > section {
     left: 0px;
     top: 0px;
+
+    .imagestack img {
+        margin: 0;
+    }
+
+    img.noborder {
+        border: 0;
+        background: none;
+        box-shadow: none;
+    }
+
+    img.full {
+        width: 100%;
+    }
+
+    img.fullslide {
+        margin-top: -10px;
+        margin-bottom: -100px;
+        height: 650px;
+        width: auto;
+    }
 }
 
 // To highlight a border:

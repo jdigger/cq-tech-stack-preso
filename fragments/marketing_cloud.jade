@@ -1,0 +1,69 @@
+section.what-is-cq
+    .vcenter
+        h2 For the Excutive
+        .quote
+            p "Adobe&reg; CQ is the foundation of the Adobe Experience Manager solution. It provides digital marketers with easy-to-use, web-based applications for creating, managing, and delivering personalized online experiences. <strong>Adobe CQ provides out-of-the-box integration with other products in Adobe Marketing Cloud</strong>."
+            p: a(href="http://www.adobe.com/sea/products/cq.html") - Adobe CQ Product Page
+
+section#marketing-cloud
+    img.fullslide.noborder(src="images/AdobeMarketingCloud.png")
+
+section
+    .vcenter
+      h3 Visitor ID Service
+
+      ul.smaller
+          li The glue that allows the advanced features to work together
+          li Common identifier across our TWC sites
+
+      .imagestack
+          img.full.noborder(src="images/visitor_id1.png")
+          br
+          img.full.noborder(src="images/visitor_id2.png")
+
+section#audience-manager
+    .vcenter
+        h3 Audience Manager
+
+        p Think of it as a database of all the traits that we know about the cookie
+        ul
+            li First party data (web site activity, billing system)
+            li Third party data (data brokers)
+        p Then create segments – collections of the visitor ids
+        p Segments the cookie belongs to are returned from Audience Manager in a callback on page load
+
+        img#am_segments.noborder(src="images/am_segments.png")
+        img#am_resp.noborder(src="images/am_resp.png")
+
+            
+section#test-n-target
+    h3 Test & Target
+
+    ul.left.small
+        li A/B and Multivariate testing
+        li Javascript libraries are added to page in head tag 
+        li “mboxes” are created as necessary via rules in Dynamic Tag Manager.
+        li A test uses mboxes to select <div> tags on specific pages and swap in experiences based on the parameters of the test
+        li In AEM, there is a native Target component whose content is controlled by T&T. This is a more reliable way to select a specific component (hero banner, promostrip, mega menu, etc.)
+
+    .right
+        img.noborder(src="images/tnt-displayed.png")
+
+section#analytics
+    h3 Analytics on Experience Manager
+    
+    p Use abstractions to map variables, minimizing Omniture-specific code
+
+    img.noborder(src="images/analytics.png")
+
+section#segmentation
+    h3 Personalization in Experience Manager
+    
+    p Audience Manager Segments<br/>Teaser component
+
+    img.noborder(src="images/aem_segmentation.png")
+
+section#am-together
+    h3 Tying It All Together
+    
+    img.noborder(src="images/am_together.png")

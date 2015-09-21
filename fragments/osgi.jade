@@ -19,12 +19,14 @@ section
 section
     .vcenter
         p.strong Extremely lightweight
-        p (originally created in 1999 for embedded devices)
+        p (originally created in 1999 for embedded devices at roughly the same time as J2EE)
+        p It's based on the JAR file format, with metadata in META-INF/MANIFEST.MF
 
 section
     .vcenter
         p.strong All about Modularity
         p (defined in terms of "bundles" and "services")
+        p Essentially every major Java EE application server uses OSGi "under the covers" to provide its fundimental modularity
 
 section
     .vcenter
@@ -45,3 +47,35 @@ section
     .vcenter
         p.strong Sane classloaders
         p (no split packages, explicit version management, fast graph traversal, etc.)
+        p Harking back to its roots, when used correctly it's extremely fast and memory-efficient
+
+section
+    .vcenter
+        p.strong Problems
+        ul
+            li It uses classloaders differently than "standard" Java SE/EE, so any CL tricks you or your libraries do can cause issues
+            li A library can not be used if it does not have the OSGi metadata
+                ul
+                    li While most of the popular libraries have OSGi metadata in their MANIFESTs, not all do &mdash; this can lead to an annoying "rewrapping the world"
+                    li Fortunately there's tooling that makes this fairly easy, but requires understanding of dependecies to do it "right"
+            li: strong It will show you how much you suck at modularizing your code
+            
+section
+    .vcenter
+        h1 OSGi's Future?
+
+section
+    .vcenter
+        p.strong Bring Out Your Dead...
+        p Deploying large applications into a single runtime is "dead", according to the micro-service people
+
+section
+    .vcenter
+        p.strong Java 9 is "really, for sure this time" (3rd time the charm?) getting Jigsaw
+            ul
+                li Optimized for creating modular-and-static environments (think "custom JRE")
+                li Has no<small><super>*</super></small> support for runtime modularity, such as modules being added or reloading
+                li Will require defining module metadata, so developers will be "forced" to finally think about it
+                    ul
+                        li Because OSGi is almost entirely a functional superset, tooling will likely appear to jump-start OSGi metadata with the Jigsaw data
+        small <super>*</super> The final spec references dynamic support, but seems to condradict parts of the spec that explicitly say that is not part of the purpose of Jigsaw. In any case, no mechanics are provided for supporting runtime modularity.
